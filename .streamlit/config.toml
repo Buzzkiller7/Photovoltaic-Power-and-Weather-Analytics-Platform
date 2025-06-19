@@ -1,0 +1,31 @@
+# Streamlit应用配置文件
+
+[global]
+# 开发模式设置
+developmentMode = false
+
+# 数据框显示设置
+dataFrameSerialization = "legacy"
+
+[server]
+# 服务器设置
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+
+# 文件上传限制
+maxUploadSize = 200
+
+[browser]
+# 浏览器设置
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[theme]
+# 主题设置
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"

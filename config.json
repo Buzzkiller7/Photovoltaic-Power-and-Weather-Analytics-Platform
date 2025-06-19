@@ -1,0 +1,47 @@
+{
+  "api": {
+    "client_id": "",
+    "secret": "",
+    "base_url": "https://openapi.tuyacn.com"
+  },
+  "collection": {
+    "interval_hours": 1,
+    "daily_collection_time": "00:00",
+    "locations": [
+      "十五舍",
+      "专教"
+    ],
+    "data_types": [
+      "mppt",
+      "weather"
+    ]
+  },
+  "storage": {
+    "raw_data_dir": "raw_data",
+    "processed_data_dir": "filtered",
+    "backup_enabled": true,
+    "backup_dir": "backup"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "auto_collector.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  "mppt": {
+    "port": "COM3",
+    "baudrate": 9600,
+    "timeout": 2
+  },
+  "data_collection": {
+    "interval_minutes": 1,
+    "data_dir": "data",
+    "file_prefix": "mppt_data",
+    "start_time": "08:00",
+    "end_time": "18:00"
+  },
+  "data_sources": {
+    "mppt_enabled": true,
+    "weather_enabled": false
+  }
+}
