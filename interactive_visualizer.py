@@ -74,7 +74,7 @@ class InteractiveVisualizer:
     def setup_page_config(self):
         """设置页面配置"""
         st.set_page_config(
-            page_title="MPPT数据分析与可视化平台",
+            page_title="光伏发电与气象数据可视化平台",
             page_icon="⚡",
             layout="wide",
             initial_sidebar_state="expanded"
@@ -1752,7 +1752,7 @@ class InteractiveVisualizer:
         """运行企业级交互式可视化平台"""
         # 企业级页面标题
         st.markdown(
-            '<div class="main-header">⚡ MPPT数据分析与可视化平台<br><small>Available Data:2024.11.18——2025.6.15</small></div>', 
+            '<div class="main-header">⚡ 光伏发电与气象数据可视化平台<br><small>Available Data: 2024.11.18 — 2025.6.15</small></div>', 
             unsafe_allow_html=True
         )
         
