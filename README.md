@@ -392,9 +392,7 @@ python test_platform.py
 
 ## 联系方式
 
-- 📧 Email: your-email@example.com
-- 🐙 GitHub: https://github.com/your-username/mppt-analytics
-- 📝 Issues: https://github.com/your-username/mppt-analytics/issues
+- 📧 Email: 1285758029@qq.com
 
 ---
 
