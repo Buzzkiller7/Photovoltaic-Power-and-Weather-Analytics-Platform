@@ -1752,7 +1752,7 @@ class InteractiveVisualizer:
         """运行企业级交互式可视化平台"""
         # 企业级页面标题
         st.markdown(
-            '<div class="main-header">⚡ MPPT数据分析与可视化平台<br><small>Sponsored by Whuhan University</small></div>', 
+            '<div class="main-header">⚡ MPPT数据分析与可视化平台<br><small>Available Data:2024.11.18——2025.6.15</small></div>', 
             unsafe_allow_html=True
         )
         
@@ -2482,14 +2482,14 @@ class InteractiveVisualizer:
                 subplot_titles=[
                     f"📈 历史趋势与预测对比 - {location}",
                     f"🎯 模型预测精度对比 - {location}",
-                    f"🔮 最后一天后半天预测对比 (13:00-17:00) - {location}",
+                    f"🔮 未来能耗预测 (13:00-17:00) - {location}",
                     ""  # 第四个图空着
                 ],
                 specs=[[{}, {}], [{"colspan": 2}, None]],  # 第二行跨两列
                 vertical_spacing=0.15,
                 horizontal_spacing=0.12,
                 row_heights=[0.4, 0.6]  # 给未来预测更多空间
-            )            # 3. 最后一天后半天预测对比（13:00-17:00）- 使用所有模型预测并与实际值对比
+            )            # 3. 未来能耗预测（13:00-17:00）- 使用所有模型预测并与实际值对比
             try:
                 # 获取数据中的最后一天
                 last_day = df_pred[time_col].dt.date.max()
